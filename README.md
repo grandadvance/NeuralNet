@@ -68,10 +68,13 @@ $$
 
 Our goal is to implement the gradient descent process to find the correct weights and biases according to the following formulas:
 
-\begin{cases} 
-w_{\text{new}} = w_{\text{old}} - \eta \cdot \nabla C(w) \\ 
-b_{\text{new}} = b_{\text{old}} - \eta \cdot \nabla C(b) 
+$$
+\begin{cases}
+w_{\text{new}} = w_{\text{old}} - \eta \cdot \nabla C(w) \\
+b_{\text{new}} = b_{\text{old}} - \eta \cdot \nabla C(b)
 \end{cases}
+$$
+
 
 
 
