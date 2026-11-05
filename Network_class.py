@@ -8,9 +8,6 @@ logging.basicConfig(level=logging.INFO)
 
 class NN(object):
 
-    # Let us assume that the structure our nearal network looks as follows  
-    # nn_structure = [784, 30, 10]
-    # training_data = [ ( X_1, Y_1 ), ( X_2, Y_2 ), ... , ( X_50000, Y_50000 ) ]
     def __init__(self, nn_structure):
         self.NN_structure_len = len(nn_structure)
         self.w = [np.random.randn(b, a) for a, b in zip(nn_structure[:-1], nn_structure[1:])]
