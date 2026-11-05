@@ -111,7 +111,7 @@ $$
 \text{Equation 3:} \quad
 \nabla C(z_m^3) = \sum_{m=1}^{10} \frac{dC}{dz_m^3} = \sum_{m=1}^{10} \sigma'(z_m^3) (\sigma(z_m^3) - y_m)
 $$
-Le us $$ z^3 $$ transform to vector like $$ {z^3_1, z^3_2, … ,z^3_10} $$, and y transform to a vector like $$ {y_1, y_2, …, y_10} $$, The equation 3 becomes as follows ∶
+Le us $$ z^3 $$ transform to vector like $$ {z^3_1, z^3_2, … ,z^3_10} $$, and $$y$$ transform to a vector like $$ {y_1, y_2, …, y_10} $$, The equation 3 becomes as follows ∶
 $$
 \nabla C(z^3) = \sigma'(z^3) \dot (\sigma(z^3) - y)
 $$
