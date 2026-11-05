@@ -43,3 +43,8 @@ a_2^2 = \sigma(z_2^2) \\
 a_{30}^2 = \sigma(z_{30}^2)
 \end{cases}
 $$
+
+Now, each \(a_{i}^{2}\) serves as the input data for the next, third layer. Following this logic, we multiply each resulting value \(a_{i}^{2}\) by the corresponding weight between the second and third layers to obtain an analogous system of equations:
+
+
+
