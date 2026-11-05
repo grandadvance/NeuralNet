@@ -83,12 +83,13 @@ $$
 Naturally, each variable such as $w$, $b$ or $\nabla C$ is a vector of values. So, let's derive them. During the neural network training, an error $C_{m}$ is generated at each of its outputs $a_{m}$. We need to find the MSE (Mean Squared Error) for all such errors. To do this, we take the derivatives as follows:
 
 $$
-MSE = C = \sum_{m=1}^{10} C_m = 0.5 \sum_{m=1}^{10} (a_m^3 - y_m)^2
+MSE = C(a_m) = \sum_{m=1}^{10} C_m = 0.5 \sum_{m=1}^{10} (a_m^3 - y_m)^2
 $$
 
 In system No. 5, the nabla operator represents the gradient—the vector of partial derivatives of our MSE. Thus:
 
 $$
-\nabla C = \sum_{m=1}^{10} \frac{dC_m}{da_m^3} = \sum_{m=1}^{10} (a_m^3 - y_m)
+\nabla C(a_m) = \sum_{m=1}^{10} \frac{dC_m}{da_m^3} = \sum_{m=1}^{10} (a_m^3 - y_m)
 $$
 
+However, our goal is to find how the gradient $\nubla C$ changes with respect to the weights and biases of the hidden (second) and output (outer) layers, rather than the output layer itself. In this case our goal is determine how to find $\nabla C(w)$ and $\nabla C(b)$
