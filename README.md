@@ -89,7 +89,7 @@ $$
 In system No. 5, the nabla operator represents the gradient—the vector of partial derivatives of our MSE. Thus:
 
 $$
-\nabla C(a_m) = \sum_{m=1}^{10} \frac{dC_m}{da_m^3} = \sum_{m=1}^{10} (a_m^3 - y_m)
+\nabla C(a_m) = \sum_{m=1}^{10} \frac{dC}{da_m^3} = \sum_{m=1}^{10} (a_m^3)' (a_m^3 - y_m)
 $$ 
 
 However, our goal is not to find how the gradient depends on the output layer activations $a_{m}$. Our task is to determine the dependence of $\nabla C$ on the weights and biases of the hidden (second) and final (third) layers:
