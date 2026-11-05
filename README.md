@@ -100,5 +100,5 @@ $$
 \nabla C(w_l) = ? \\
 \\
 \nabla C(b_l) = ?
-\end{cases}, where \text{ } l \text{ } is \text{ } the \text{ } of \text{ } corresponding \text{ } layers
+\end{cases}, where \text{ } l \text{ } is \text{ } the \text{ } index \text{ } of \text{ } corresponding \text{ } layers
 $$
