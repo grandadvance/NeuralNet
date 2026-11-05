@@ -80,7 +80,7 @@ b_{\text{new}} = b_{\text{old}} - \eta \cdot \nabla C(b)
 \end{cases}
 $$
 
-Naturally, each variable such as $w$, $b$ or $\nabla C$ is a vector of values. So, let's derive them. During the neural network training, an error \(C_{m}\) is generated at each of its outputs \(a_{m}\). We need to find the MSE (Mean Squared Error) for all such errors. To do this, we take the derivatives as follows:
+Naturally, each variable such as $w$, $b$ or $\nabla C$ is a vector of values. So, let's derive them. During the neural network training, an error $C_{m}$ is generated at each of its outputs $a_{m}$. We need to find the MSE (Mean Squared Error) for all such errors. To do this, we take the derivatives as follows:
 
 $$
 MSE = C = \sum_{m=1}^{10} C_m = 0.5 \sum_{m=1}^{10} (a_m^3 - y_m)^2
