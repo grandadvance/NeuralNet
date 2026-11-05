@@ -46,5 +46,26 @@ $$
 
 Now, each \(a_{i}^{2}\) serves as the input data for the next, third layer. Following this logic, we multiply each resulting value \(a_{i}^{2}\) by the corresponding weight between the second and third layers to obtain an analogous system of equations:
 
+$$
+\begin{cases}
+z_1^3 = w_{11}^3 a_1^2 + w_{12}^3 a_2^2 + \dots + w_{1\,30}^3 a_{30}^2 \\
+z_2^3 = w_{21}^3 a_1^2 + w_{22}^3 a_2^2 + \dots + w_{2\,30}^3 a_{30}^2 \\
+\dots \\
+z_{10}^3 = w_{10\,1}^3 a_1^2 + w_{10\,2}^3 a_2^2 + \dots + w_{10\,30}^3 a_{30}^2
+\end{cases}
+$$
+
+and
+
+$$
+\begin{cases}
+a_1^3 = \sigma(z_1^3) \\
+a_2^3 = \sigma(z_2^3) \\
+\dots \\
+a_{10}^3 = \sigma(z_{10}^3)
+\end{cases}
+$$
+
+
 
 
