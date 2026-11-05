@@ -75,7 +75,7 @@ b_{\text{new}} = b_{\text{old}} - \eta \cdot \nabla C(b)
 \end{cases}
 $$
 
-Naturally, each variable such as $\w$, $\b$ or $\nabla C$ is a vector of values. So, let's derive them.
+Naturally, each variable such as $\w $, $\b $ or $\nabla C$ is a vector of values. So, let's derive them.
 
 
 
