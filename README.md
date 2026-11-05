@@ -9,4 +9,13 @@ A. Complete chapter one of Nielsen book http://neuralnetworksanddeeplearning.com
 3. Study the code from Nielsen's first chapter;
 4. Afterward create code from scratch.
 
+
+Let us assume that the structure of our neural network is represented as Python list as follows: 
+
+nn_structure = [784, 30, 10] 
+
+We also have training data formatted like: 
+
+training_data = [ ( X_1, Y_1 ), ( X_2, Y_2 ), ... , ( X_50000, Y_50000 ) ]
+
 ![Nielsen Neural Net structure](images/Nielsen_NN_structure.jpg)
