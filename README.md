@@ -106,7 +106,15 @@ $$
 $$
 
 Let us rewrite the equation 2 as follows:
+
 $$
 \text{Equation 3:} \quad
 \nabla C(z_m) = \sum_{m=1}^{10} \frac{dC}{dz_m^3} = \sum_{m=1}^{10} \sigma'(z_m^3) (\sigma(z_m^3) - y_m)
 $$
+
+
+
+
+
+
+
