@@ -101,5 +101,5 @@ $$
 \\
 \nabla C(b_l) = ?
 \end{cases}
-\tag{Система №8}, where l is a nubber of layers
+\tag{Система №8}, where \test( ) l \test( ) is \test( ) a \test( ) nubber \test( ) of \test( ) layers
 $$
