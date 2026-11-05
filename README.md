@@ -25,6 +25,7 @@ To begin with let us algebraically describe input, hidden and output layers.
 When we pass from the input layer to the hidden layer, we need to multiply each input value by the appropriate weight, as shown in the picture above. Let z_i^2 denote the resulting weighted sums for the second layer. Thus, we obtain the following system of equations:
 
 $$
+\text{System 1:} \quad
 \begin{cases}
 z_1^2 = w_{11}^2 a_1^1 + w_{12}^2 a_2^1 + \dots + w_{1\,784}^2 a_{784}^1 \\
 z_2^2 = w_{21}^2 a_1^1 + w_{22}^2 a_2^1 + \dots + w_{2\,784}^2 a_{784}^1 \\
@@ -36,6 +37,7 @@ $$
 Now, these weighted sums must serve as the input data for the next, third layer. However, they cannot simply be fed into the next layer, as they can become extremely large. To prevent this, we pass each weighted sum through the sigmoid function to map all \(z_{i}^{2}\) values into numbers between 0 and 1. We can then rewrite the system of equations as follows (denote each results by a_i^2):
 
 $$
+\text{System 2:} \quad
 \begin{cases}
 a_1^2 = \sigma(z_1^2) \\
 a_2^2 = \sigma(z_2^2) \\
@@ -47,6 +49,7 @@ $$
 Now, each \(a_{i}^{2}\) serves as the input data for the next, third layer. Following this logic, we multiply each resulting value \(a_{i}^{2}\) by the corresponding weight between the second and third layers to obtain an analogous system of equations:
 
 $$
+\text{System 3:} \quad
 \begin{cases}
 z_1^3 = w_{11}^3 a_1^2 + w_{12}^3 a_2^2 + \dots + w_{1\,30}^3 a_{30}^2 \\
 z_2^3 = w_{21}^3 a_1^2 + w_{22}^3 a_2^2 + \dots + w_{2\,30}^3 a_{30}^2 \\
@@ -58,6 +61,7 @@ $$
 and
 
 $$
+\text{System 4:} \quad
 \begin{cases}
 a_1^3 = \sigma(z_1^3) \\
 a_2^3 = \sigma(z_2^3) \\
@@ -69,14 +73,21 @@ $$
 Our goal is to implement the gradient descent process to find the correct weights and biases according to the following formulas:
 
 $$
+\text{System 5:} \quad
 \begin{cases}
 w_{\text{new}} = w_{\text{old}} - \eta \cdot \nabla C(w) \\
 b_{\text{new}} = b_{\text{old}} - \eta \cdot \nabla C(b)
 \end{cases}
 $$
 
-Naturally, each variable such as $w$, $b$ or $\nabla C$ is a vector of values. So, let's derive them.
+Naturally, each variable such as $w$, $b$ or $\nabla C$ is a vector of values. So, let's derive them. During the neural network training, an error \(C_{m}\) is generated at each of its outputs \(a_{m}\). We need to find the MSE (Mean Squared Error) for all such errors. To do this, we take the derivatives as follows:
 
+$$
+MSE = C = \sum_{m=1}^{10} C_m = 0.5 \sum_{m=1}^{10} (a_m^3 - y_m)^2
+$$
 
+In system No. 5, the nabla operator represents the gradient—the vector of partial derivatives of our MSE. Thus:
 
-
+$$
+\nabla C = \sum_{m=1}^{10} \frac{dC}{da_m^3} = \sum_{m=1}^{10} (a_m^3 - y_m)
+$$
