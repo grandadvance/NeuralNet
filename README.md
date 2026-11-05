@@ -83,12 +83,14 @@ $$
 Naturally, each variable such as $w$, $b$ or $\nabla C$ is a vector of values. So, let's derive them. During the neural network training, an error $C_{m}$ is generated at each of its outputs $a_{m}$. We need to find the MSE (Mean Squared Error) for all such errors. To do this, we take the derivatives as follows:
 
 $$
+\text{Equation 1:} \quad
 MSE = C(a_m) = \sum_{m=1}^{10} C_m = 0.5 \sum_{m=1}^{10} (a_m^3 - y_m)^2
 $$
 
 In system No. 5, the nabla operator represents the gradient—the vector of partial derivatives of our MSE. Thus:
 
 $$
+\text{Equation 2:} \quad
 \nabla C(a_m) = \sum_{m=1}^{10} \frac{dC}{da_m^3} = \sum_{m=1}^{10} (a_m^3)' (a_m^3 - y_m)
 $$ 
 
@@ -101,4 +103,10 @@ $$
 \\
 \nabla C(b_l) = ?
 \end{cases}, where \text{ } l \text{ } is \text{ } the \text{ } index \text{ } of \text{ } corresponding \text{ } layers
+$$
+
+Let us rewrite the equation 2 as follows:
+$$
+\text{Equation 3:} \quad
+\nabla C(a_m) = \sum_{m=1}^{10} \frac{dC}{dz_m^3} = \sum_{m=1}^{10} (\sigma(z_m^3))' (\sigma(z_m^3) - y_m)
 $$
