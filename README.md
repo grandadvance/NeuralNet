@@ -18,7 +18,7 @@ We also have training data formatted like:
 
 training_data = [ ( X_1, Y_1 ), ( X_2, Y_2 ), ... , ( X_50000, Y_50000 ) ]
 
-![Nielsen Neural Net structure](images/Nielsen_NN_structure.jpg)
+![Nielsen Neural Net structure](images/Nielsen_NN_structure.png)
 
 To begin with let us algebraically describe input, hidden and output layers.
 
