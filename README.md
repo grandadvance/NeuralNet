@@ -32,3 +32,14 @@ z_2^2 = w_{21}^2 a_1^1 + w_{22}^2 a_2^1 + \dots + w_{2\,784}^2 a_{784}^1 \\
 z_{30}^2 = w_{30\,1}^2 a_1^1 + w_{30\,2}^2 a_2^1 + \dots + w_{30\,784}^2 a_{784}^1
 \end{cases}
 $$
+
+Now, these weighted sums must serve as the input data for the next, third layer. However, they cannot simply be fed into the next layer, as they can become extremely large. To prevent this, we pass each weighted sum through the sigmoid function to map all \(z_{i}^{2}\) values into numbers between 0 and 1. We can then rewrite the system of equations as follows (denote each results by a_i^2):
+
+$$
+\begin{cases}
+a_1^2 = \sigma(z_1^2) \\
+a_2^2 = \sigma(z_2^2) \\
+\dots \\
+a_{30}^2 = \sigma(z_{30}^2)
+\end{cases}
+$$
