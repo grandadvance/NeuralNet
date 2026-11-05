@@ -22,6 +22,8 @@ training_data = [ ( X_1, Y_1 ), ( X_2, Y_2 ), ... , ( X_50000, Y_50000 ) ]
 
 To begin with let us algebraically describe input, hidden and output layers.
 
+When we pass from the input layer to the hidden layer, we need to multiply each input value by the appropriate weight, as shown in the picture above.
+
 $$
 \begin{cases}
 z_1^2 = w_{11}^2 a_1^1 + w_{12}^2 a_2^1 + \dots + w_{1\,784}^2 a_{784}^1 \\
