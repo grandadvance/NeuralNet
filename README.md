@@ -21,3 +21,12 @@ training_data = [ ( X_1, Y_1 ), ( X_2, Y_2 ), ... , ( X_50000, Y_50000 ) ]
 ![Nielsen Neural Net structure](images/Nielsen_NN_structure.jpg)
 
 To begin with let us algebraically describe input, hidden and output layers.
+
+$$
+\begin{cases}
+z_1^2 = w_{11}^2 a_1^1 + w_{12}^2 a_2^1 + \dots + w_{1\,784}^2 a_{784}^1 \\
+z_2^2 = w_{21}^2 a_1^1 + w_{22}^2 a_2^1 + \dots + w_{2\,784}^2 a_{784}^1 \\
+\dots \\
+z_{30}^2 = w_{784\,1}^2 a_1^1 + w_{784\,2}^2 a_2^1 + \dots + w_{784\,784}^2 a_{784}^1
+\end{cases}
+$$
