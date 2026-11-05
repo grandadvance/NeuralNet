@@ -92,4 +92,14 @@ $$
 \nabla C(a_m) = \sum_{m=1}^{10} \frac{dC_m}{da_m^3} = \sum_{m=1}^{10} (a_m^3 - y_m)
 $$ 
 
-However, our goal is not to find how the gradient depends on the output layer activations \(a_{m}\). Our task is to determine the dependence of \(\nabla C\) on the weights and biases of the hidden (second) and final (third) layers.
+However, our goal is not to find how the gradient depends on the output layer activations $a_{m}$. Our task is to determine the dependence of $\nabla C$ on the weights and biases of the hidden (second) and final (third) layers:
+
+$$
+\text{System 6:} \quad
+\begin{cases}
+\nabla C(w_l) = ? \\
+\\
+\nabla C(b_l) = ?
+\end{cases}
+\tag{Система №8}, where l is a nubber of layers
+$$
