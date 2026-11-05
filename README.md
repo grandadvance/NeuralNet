@@ -100,6 +100,5 @@ $$
 \nabla C(w_l) = ? \\
 \\
 \nabla C(b_l) = ?
-\end{cases}
-\tag{Система №8}, where \text{ } l \text{ } is \text{ } a \text{ } nubber \text{ } of \text{ } layers
+\end{cases}, where \text{ } l \text{ } is \text{ } the \text{ } of \text{ } corresponding \text{ } layers
 $$
