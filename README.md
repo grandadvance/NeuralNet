@@ -90,6 +90,6 @@ In system No. 5, the nabla operator represents the gradient—the vector of part
 
 $$
 \nabla C(a_m) = \sum_{m=1}^{10} \frac{dC_m}{da_m^3} = \sum_{m=1}^{10} (a_m^3 - y_m)
-$$
+$$ 
 
-However, our goal is to find how the gradient $\nabla C$ changes with respect to the weights and biases of the hidden (second) and output (outer) layers, rather than the output layer itself. In this case our goal is determine how to find $\nabla C(w)$ and $\nabla C(b)$
+However, our goal is not to find how the gradient depends on the output layer activations \(a_{m}\). Our task is to determine the dependence of \(\nabla C\) on the weights and biases of the hidden (second) and final (third) layers.
