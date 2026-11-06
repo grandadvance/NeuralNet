@@ -161,8 +161,8 @@ b_2^3 \\
 b_{10}^3
 \end{pmatrix}
 \right]
-\text{\rule{0pt}{2.5em}\small Equation 6}
 \end{gathered}
+\text{\rule{0pt}{2.5em}\small Equation 6}
 $$
 
 
