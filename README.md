@@ -139,7 +139,7 @@ w_{21}^3 & w_{22}^3 & w_{23}^3 & \dots & w_{2\,30}^3 \\
 w_{10\,1}^3 & w_{10\,2}^3 & w_{10\,3}^3 & \dots & w_{10\,30}^3
 \end{pmatrix}
 \right]
-\text{\vphantom{\parbox[c][2em]{1em}{}}\small Equation 4}
+\text{\rule{0pt}{2.5em}\small Equation 4}
 $$
 
 
