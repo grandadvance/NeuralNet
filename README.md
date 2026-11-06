@@ -162,9 +162,8 @@ b_{10}^3
 \end{pmatrix}
 \right]
 \end{gathered}
-\text{\rule{0pt}{2.5em}\small Equation 6}
 $$
-
+<p align="center"><small>Equation 6</small></p> <br>
 
 
 
