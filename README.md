@@ -124,7 +124,7 @@ In Michael Nielsen's book, equation 4 is known as BP1. This formula demonstrates
 We have come very close. Let us state the key questions: how do the weights and biases between the first and second layers, as well as between the second and third layers, affect the final error? To answer this, let us first clarify exactly how we will use these weights and biases in Python. In the Network() class, Michael Nielsen suggests storing the weights self.w and biases self.b as large matrices nested within lists, as follows:
 
 $$
-\text{self.w} = \left[
+\text{self.w} = \left[\text{ }
 \begin{pmatrix}
 w_{11}^2 & w_{12}^2 & w_{13}^2 & w_{14}^2 & \dots & w_{1\,784}^2 \\
 w_{21}^2 & w_{22}^2 & w_{23}^2 & w_{24}^2 & \dots & w_{2\,784}^2 \\
@@ -132,20 +132,20 @@ w_{31}^2 & w_{32}^2 & w_{33}^2 & w_{34}^2 & \dots & w_{3\,784}^2 \\
 \dots & \dots & \dots & \dots & \ddots & \dots \\
 w_{30\,1}^2 & w_{30\,2}^2 & w_{30\,3}^2 & w_{30\,4}^2 & \dots & w_{30\,784}^2
 \end{pmatrix}
-,
+,\text{ }
 \begin{pmatrix}
 w_{11}^3 & w_{12}^3 & w_{13}^3 & \dots & w_{1\,30}^3 \\
 w_{21}^3 & w_{22}^3 & w_{23}^3 & \dots & w_{2\,30}^3 \\
 \dots & \dots & \dots & \ddots & \dots \\
 w_{10\,1}^3 & w_{10\,2}^3 & w_{10\,3}^3 & \dots & w_{10\,30}^3
 \end{pmatrix}
-\right]
+\text{ }\right]
 $$
 <p align="center"><small>Equation 5</small></p> <br>
 
 $$
 \begin{gathered}
-\text{self.b} = \left[
+\text{self.b} = \left[\text{ }
 \begin{pmatrix}
 b_1^2 \\
 b_2^2 \\
@@ -153,14 +153,14 @@ b_3^2 \\
 \dots \\
 b_{30}^2
 \end{pmatrix}
-,
+,\text{ }
 \begin{pmatrix}
 b_1^3 \\
 b_2^3 \\
 \dots \\
 b_{10}^3
 \end{pmatrix}
-\right]
+\text{ }\right]
 \end{gathered}
 $$
 <p align="center"><small>Equation 6</small></p> <br>
