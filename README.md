@@ -31,8 +31,8 @@ z_2^2 = w_{21}^2 a_1^1 + w_{22}^2 a_2^1 + \dots + w_{2\,784}^2 a_{784}^1 \\
 \dots \\
 z_{30}^2 = w_{30\,1}^2 a_1^1 + w_{30\,2}^2 a_2^1 + \dots + w_{30\,784}^2 a_{784}^1
 \end{cases}
-\text{\rule{0pt}{2.5em}\small System 1}
 $$
+<p align="center"><small>System 1</small></p> <br>
 
 Now, these weighted sums must serve as the input data for the next, third layer. However, they cannot simply be fed into the next layer, as they can become extremely large. To prevent this, we pass each weighted sum through the sigmoid function to map all \(z_{i}^{2}\) values into numbers between 0 and 1. We can then rewrite the system of equations as follows (denote each results by a_i^2):
 
@@ -43,8 +43,8 @@ a_2^2 = \sigma(z_2^2) \\
 \dots \\
 a_{30}^2 = \sigma(z_{30}^2)
 \end{cases}
-\text{\rule{0pt}{2.5em}\small System 2}
 $$
+<p align="center"><small>System 2</small></p> <br>
 
 Now, each \(a_{i}^{2}\) serves as the input data for the next, third layer. Following this logic, we multiply each resulting value \(a_{i}^{2}\) by the corresponding weight between the second and third layers to obtain an analogous system of equations:
 
@@ -55,8 +55,8 @@ z_2^3 = w_{21}^3 a_1^2 + w_{22}^3 a_2^2 + \dots + w_{2\,30}^3 a_{30}^2 \\
 \dots \\
 z_{10}^3 = w_{10\,1}^3 a_1^2 + w_{10\,2}^3 a_2^2 + \dots + w_{10\,30}^3 a_{30}^2
 \end{cases}
-\text{\rule{0pt}{2.5em}\small System 3}
 $$
+<p align="center"><small>System 3</small></p> <br>
 
 and
 
@@ -67,8 +67,8 @@ a_2^3 = \sigma(z_2^3) \\
 \dots \\
 a_{10}^3 = \sigma(z_{10}^3)
 \end{cases}
-\text{\rule{0pt}{2.5em}\small System 4}
 $$
+<p align="center"><small>System 4</small></p> <br>
 
 Our goal is to implement the gradient descent process to find the correct weights and biases according to the following formulas:
 
@@ -77,22 +77,22 @@ $$
 w_{\text{new}} = w_{\text{old}} - \eta \cdot \nabla C(w) \\
 b_{\text{new}} = b_{\text{old}} - \eta \cdot \nabla C(b)
 \end{cases}
-\text{\rule{0pt}{2.5em}\small System 5}
 $$
+<p align="center"><small>System 5</small></p> <br>
 
 Naturally, each variable such as $w$, $b$ or $\nabla C$ is a vector of values. So, let's derive them. During the neural network training, an error $C_{m}$ is generated at each of its outputs $a_{m}$. We need to find the MSE (Mean Squared Error) for all such errors. To do this, we take the derivatives as follows:
 
 $$
 MSE = C(a_m) = \sum_{m=1}^{10} C_m = 0.5 \sum_{m=1}^{10} (a_m^3 - y_m)^2
-\text{\rule{0pt}{2.5em}\small Equation 1}
 $$
+<p align="center"><small>Equation 1</small></p> <br>
 
 In system No. 5, the nabla operator represents the gradient—the vector of partial derivatives of our MSE. Thus:
 
 $$
 \nabla C(a_m) = \sum_{m=1}^{10} \frac{dC}{da_m^3} = \sum_{m=1}^{10} (a_m^3)' (a_m^3 - y_m)
-\text{\rule{0pt}{2.5em}\small Equation 2}
 $$ 
+<p align="center"><small>Equation 2</small></p> <br>
 
 However, our goal is not to find how the gradient depends on the output layer activations $a_{m}$. Our task is to determine the dependence of $\nabla C$ on the weights and biases of the hidden (second) and final (third) layers:
 
@@ -102,21 +102,22 @@ $$
 \\
 \nabla C(b_l) = ?
 \end{cases}, where \text{ } l \text{ } is \text{ } the \text{ } index \text{ } of \text{ } corresponding \text{ } layers
-\text{\rule{0pt}{2.5em}\small System 6}
 $$
+<p align="center"><small>System 6</small></p> <br>
 
 Let us rewrite the equation 2 as follows:
 
 $$
 \nabla C(z_m^3) = \sum_{m=1}^{10} \frac{dC}{dz_m^3} = \sum_{m=1}^{10} \sigma'(z_m^3) (\sigma(z_m^3) - y_m)
-\text{\rule{0pt}{2.5em}\small Equation 3}
 $$
+<p align="center"><small>Equation 3</small></p> <br>
+
 Le us $$ z^3 $$ transform to vector like $$ {z^3_1, z^3_2, … ,z^3_{10}} $$, and $$y$$ transform to a vector like $$ {y_1, y_2, …, y_{10}} $$, The equation 3 becomes as follows ∶
 
 $$
 \nabla C(z^3) = (\sigma(z^3) - y) \dot \sigma'(z^3)
-\text{\rule{0pt}{2.5em}\small Equation 4}
 $$
+<p align="center"><small>Equation 4</small></p> <br>
 
 In Michael Nielsen's book, equation 4 is known as BP1. This formula demonstrates how the weighted sum of weights and biases between the second and third layers affects the final error.
 
@@ -139,9 +140,8 @@ w_{21}^3 & w_{22}^3 & w_{23}^3 & \dots & w_{2\,30}^3 \\
 w_{10\,1}^3 & w_{10\,2}^3 & w_{10\,3}^3 & \dots & w_{10\,30}^3
 \end{pmatrix}
 \right]
-\text{\rule{0pt}{2.5em}\small Equation 5}
 $$
-
+<p align="center"><small>Equation 5</small></p> <br>
 
 $$
 \begin{gathered}
