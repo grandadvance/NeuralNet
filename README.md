@@ -112,12 +112,32 @@ $$
 \nabla C(z_m^3) = \sum_{m=1}^{10} \frac{dC}{dz_m^3} = \sum_{m=1}^{10} \sigma'(z_m^3) (\sigma(z_m^3) - y_m)
 $$
 Le us $$ z^3 $$ transform to vector like $$ {z^3_1, z^3_2, … ,z^3_{10}} $$, and $$y$$ transform to a vector like $$ {y_1, y_2, …, y_{10}} $$, The equation 3 becomes as follows ∶
+
 $$
-\nabla C(z^3) = \sigma'(z^3) \dot (\sigma(z^3) - y)
+\text{Equation 4:} \quad
+\nabla C(z^3) = (\sigma(z^3) - y) \dot \sigma'(z^3)
 $$
 
+In Michael Nielsen's book, equation 4 is known as BP1. This formula demonstrates how the weighted sum of weights and biases between the second and third layers affects the final error.
 
-
+$$
+\text{self.w} = \left[
+\begin{pmatrix}
+w_{11}^2 & w_{12}^2 & w_{13}^2 & w_{14}^2 & \dots & w_{1\,784}^2 \\
+w_{21}^2 & w_{22}^2 & w_{23}^2 & w_{24}^2 & \dots & w_{2\,784}^2 \\
+w_{31}^2 & w_{32}^2 & w_{33}^2 & w_{34}^2 & \dots & w_{3\,784}^2 \\
+\dots & \dots & \dots & \dots & \ddots & \dots \\
+w_{30\,1}^2 & w_{30\,2}^2 & w_{30\,3}^2 & w_{30\,4}^2 & \dots & w_{30\,784}^2
+\end{pmatrix}
+,
+\begin{pmatrix}
+w_{11}^3 & w_{12}^3 & w_{13}^3 & \dots & w_{1\,30}^3 \\
+w_{21}^3 & w_{22}^3 & w_{23}^3 & \dots & w_{2\,30}^3 \\
+\dots & \dots & \dots & \ddots & \dots \\
+w_{10\,1}^3 & w_{10\,2}^3 & w_{10\,3}^3 & \dots & w_{10\,30}^3
+\end{pmatrix}
+\right]
+$$
 
 
 
