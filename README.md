@@ -132,7 +132,7 @@ $$
 </p>
 <br>
 
-In Michael Nielsen's book, equation 4 is known as BP1. This formula demonstrates how the weighted sum of weights and biases between the second and third layers affects the final error.
+In Michael Nielsen's book, equation 4 is known as BP1. This formula demonstrates how the weighted sum of weights and biases between the second and third layers affects the final error. By the way dot between $(\sigma(z^3) - y)$ and $\sigma(z^3)(1-\sigma(z^3))$ is scalar product!
 
 However, in system 5, we do not need $C(z^3)$, but rather $C(w^3)$. Therefore, we need to find $\nabla C(w^3)$. But how do we access this variable $w$? We have come very close! Please refer to Figure 2. For simplicity, I have collapsed all the layers into conventional circles:
 
