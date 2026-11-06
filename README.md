@@ -137,9 +137,9 @@ w_{11}^3 & w_{12}^3 & w_{13}^3 & \dots & w_{1\,30}^3 \\
 w_{21}^3 & w_{22}^3 & w_{23}^3 & \dots & w_{2\,30}^3 \\
 \dots & \dots & \dots & \ddots & \dots \\
 w_{10\,1}^3 & w_{10\,2}^3 & w_{10\,3}^3 & \dots & w_{10\,30}^3
-\text{\small Equation 5}
 \end{pmatrix}
 \right]
+\text{\small Equation 5}
 $$
 
 $$
