@@ -133,7 +133,7 @@ $$
 
 In Michael Nielsen's book, equation 4 is known as BP1. This formula demonstrates how the weighted sum of weights and biases between the second and third layers affects the final error.
 
-However, in system 5, we do not need C(z^3), but rather C(w^3). Therefore, we need to find \nabla C(w^3). We have come very close. 
+However, in system 5, we do not need $C(z^3)$, but rather $C(w^3)$. Therefore, we need to find $\nabla C(w^3)$. We have come very close. 
 
 Before that let us state the key questions: how do the weights and biases between the first and second layers, as well as between the second and third layers, affect the final error? To answer this, let us first clarify exactly how we will use these weights and biases in Python. In the Network() class, Michael Nielsen suggests storing the weights self.w and biases self.b as large matrices nested within lists, as follows:
 
