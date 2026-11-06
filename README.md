@@ -136,7 +136,10 @@ In Michael Nielsen's book, equation 4 is known as BP1. This formula demonstrates
 
 However, in system 5, we do not need $C(z^3)$, but rather $C(w^3)$. Therefore, we need to find $\nabla C(w^3)$. But how do we access this variable $w$? We have come very close! Please refer to Figure 2. For simplicity, I have collapsed all the layers into conventional circles:
 
+![dC/dx explanation](images/dC_dx_explanation.png)
 <p align="center"><small>Figure 2</small></p> <br>
+
+In the simplified diagram above, our final error $dC$ is affected by either the variable from path 1, the variable from path 2, the variable from path 3, and so on. Suppose we want to find $\partial C / \partial z^3_m$. Notice the method I proposed to do this: we simply added a unit fraction and then filled it with the required element!
 
 Before that let us state the key questions: how do the weights and biases between the first and second layers, as well as between the second and third layers, affect the final error? To answer this, let us first clarify exactly how we will use these weights and biases in Python. In the Network() class, Michael Nielsen suggests storing the weights self.w and biases self.b as large matrices nested within lists, as follows:
 
