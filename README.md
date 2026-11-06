@@ -19,6 +19,7 @@ We also have training data formatted like:
 training_data = [ ( X_1, Y_1 ), ( X_2, Y_2 ), ... , ( X_50000, Y_50000 ) ]
 
 ![Nielsen Neural Net structure](images/Nielsen_NN_structure.png)
+<p align="center"><small>Figure 1</small></p> <br>
 
 To begin with let us algebraically describe input, hidden and output layers.
 
@@ -133,7 +134,9 @@ $$
 
 In Michael Nielsen's book, equation 4 is known as BP1. This formula demonstrates how the weighted sum of weights and biases between the second and third layers affects the final error.
 
-However, in system 5, we do not need $C(z^3)$, but rather $C(w^3)$. Therefore, we need to find $\nabla C(w^3)$. We have come very close. 
+However, in system 5, we do not need $C(z^3)$, but rather $C(w^3)$. Therefore, we need to find $\nabla C(w^3)$. But how do we access this variable $w$? We have come very close! Please refer to Figure 2. For simplicity, I have collapsed all the layers into conventional circles:
+
+<p align="center"><small>Figure 2</small></p> <br>
 
 Before that let us state the key questions: how do the weights and biases between the first and second layers, as well as between the second and third layers, affect the final error? To answer this, let us first clarify exactly how we will use these weights and biases in Python. In the Network() class, Michael Nielsen suggests storing the weights self.w and biases self.b as large matrices nested within lists, as follows:
 
