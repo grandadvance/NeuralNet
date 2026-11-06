@@ -144,7 +144,6 @@ $$
 
 
 $$
-\text{Equation 6:} \quad
 \text{self.b} = \left[
 \begin{pmatrix}
 b_1^2 \\
