@@ -118,9 +118,7 @@ $$
 \nabla C(z^3) = (\sigma(z^3) - y) \dot \sigma'(z^3)
 $$
 <p align="center"><small>Equation 4</small></p> <br>
-
 or
-
 $$
 \nabla C(z^3) = (\sigma(z^3) - y) \dot \sigma(z^3)(1-\sigma(z^3))
 $$
