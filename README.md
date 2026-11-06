@@ -144,6 +144,7 @@ $$
 
 
 $$
+\begin{gathered}
 \text{self.b} = \left[
 \begin{pmatrix}
 b_1^2 \\
@@ -161,6 +162,7 @@ b_{10}^3
 \end{pmatrix}
 \right]
 \text{\rule{0pt}{2.5em}\small Equation 6}
+\end{gathered}
 $$
 
 
