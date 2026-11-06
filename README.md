@@ -115,16 +115,16 @@ $$
 Let us z^3 transform to vector like {z^3_1, z^3_2, … ,z^3_{10}}, and y transform to a vector like {y_1, y_2, …, y_{10}}. The equation 3 becomes as follows ∶
 
 $$
-\BP1: \delta^3=\nabla C(z^3) = (\sigma(z^3) - y) \dot \sigma'(z^3)
+\delta^3=\nabla C(z^3) = (\sigma(z^3) - y) \dot \sigma'(z^3)
 $$
 <p align="center"><small>Equation 4</small></p> <br>
 
 or
 
 $$
-\BP1: \delta^3=\nabla C(z^3) = (\sigma(z^3) - y) \dot \sigma(z^3)(1-\sigma(z^3))
+\delta^3= (\sigma(z^3) - y) \dot \sigma(z^3)(1-\sigma(z^3))
 $$
-<p align="center"><small>Equation 4'</small></p> <br>
+<p align="center" style="color: #238636;"><small>Equation 4' - BP1</small></p>
 
 In Michael Nielsen's book, equation 4 is known as BP1. This formula demonstrates how the weighted sum of weights and biases between the second and third layers affects the final error.
 
