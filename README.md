@@ -139,8 +139,10 @@ w_{21}^3 & w_{22}^3 & w_{23}^3 & \dots & w_{2\,30}^3 \\
 w_{10\,1}^3 & w_{10\,2}^3 & w_{10\,3}^3 & \dots & w_{10\,30}^3
 \end{pmatrix}
 \right]
+\text{ }
 \text{\small Equation 5}
 $$
+
 
 $$
 \text{Equation 6:} \quad
