@@ -123,9 +123,13 @@ or
 
 $$
 \delta^3= (\sigma(z^3) - y) \dot \sigma(z^3)(1-\sigma(z^3))
-\tag*{\color{green}\text{Equation 4' - BP1}}
 $$
-<p align="center" style="color: #238636;"><small>Equation 4' - BP1</small></p>
+<p align="center">
+ ________________________<br>
+  <b>Equation 4' - BP1</b><br>
+ ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+</p>
+<br>
 
 In Michael Nielsen's book, equation 4 is known as BP1. This formula demonstrates how the weighted sum of weights and biases between the second and third layers affects the final error.
 
