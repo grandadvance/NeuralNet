@@ -205,7 +205,9 @@ $$
 
 Or shortly:
 
-$\frac{dC}{da^2} = (w^3)^T \cdot \delta^3$
+<p align="center"> $\frac{dC}{da^2} = (w^3)^T \cdot \delta^3$</p>
+<br> 
+
 <p align="center">Equation 8' <code>dimension of δ³ is 10x1</code></p>
 <br> 
 
