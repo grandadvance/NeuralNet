@@ -147,6 +147,8 @@ $$
 \frac{dC}{da^2} = \frac{dC}{da^3} \cdot \frac{da^3}{dz^3} \cdot \frac{dz^3}{da^2}
 $$
 
+<p align="center"><small>Equation 5</small></p> <br>
+
 However, for this vector-matrix product to be algebraically feasible, we must swap the order of the weight matrix and the error $\delta$
 
 Furthermore, we cannot use standard multiplication symbols since our formulas deal with matrices and vectors. Therefore, when expanding the differentials, we will directly replace the multiplication signs with their corresponding alternatives in certain places.
@@ -154,6 +156,8 @@ Furthermore, we cannot use standard multiplication symbols since our formulas de
 $$
 \frac{dC}{da^2} = \frac{dz^3}{da^2} \cdot \frac{dC}{da^3} \cdot \frac{da^3}{dz^3} = w \cdot (a^3 - y) \odot \sigma(z^3) \odot (1 - \sigma(z^3))
 $$
+
+<p align="center"><small>Equation 6</small></p> <br>
 
 It is also important to note that we use the transposition operation to make the Hadamard product possible. This is an artificial introduction at this step, driven by dimension matching considerations during multiplication.
 
@@ -185,6 +189,7 @@ z_2^3 \\
 z_{10}^3
 \end{pmatrix} \right)
 $$
+<p align="center"><small>System 7</small></p> <br>
 
 $$
 \frac{dC}{da^2} = \begin{pmatrix}
@@ -195,7 +200,7 @@ w_{10\,1}^3 & w_{10\,2}^3 & w_{10\,3}^3 & \dots & w_{10\,30}^3
 \end{pmatrix}^T \cdot \delta^3
 $$
 
-<p align="center"><code>dimension of δ³ is 10x1</code></p>
+<p align="center">System 8 <code>dimension of δ³ is 10x1</code></p>
 <br> 
 
 
