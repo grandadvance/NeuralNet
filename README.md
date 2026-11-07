@@ -320,6 +320,7 @@ If we express this system of equations in matrix form, it will look as follows:
 
 Alternatively, we can rewrite the exact same system, but this time applying the BP3 and BP4 equations:
 
+$$
 \left\{
 \begin{aligned}
 &\begin{pmatrix}
@@ -353,8 +354,8 @@ b_{10\text{ old}}^3
 \delta_{10}^3
 \end{pmatrix}
 \end{aligned}
-\right.
-
+\right
+$$
 
 <p align="center"><small>System 5''</small></p> <br>
 
