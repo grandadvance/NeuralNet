@@ -189,7 +189,7 @@ z_2^3 \\
 z_{10}^3
 \end{pmatrix} \right)
 $$
-<p align="center"><small>System 7</small></p> <br>
+<p align="center"><small>Equation 7</small></p> <br>
 
 $$
 \frac{dC}{da^2} = \begin{pmatrix}
@@ -200,8 +200,18 @@ w_{10\,1}^3 & w_{10\,2}^3 & w_{10\,3}^3 & \dots & w_{10\,30}^3
 \end{pmatrix}^T \cdot \delta^3
 $$
 
-<p align="center">System 8 <code>dimension of δ³ is 10x1</code></p>
+<p align="center">Equation 8 <code>dimension of δ³ is 10x1</code></p>
 <br> 
+
+Or shortly:
+$$
+\frac{dC}{da^2} = (w^3)^T \cdot \delta^3
+$$
+<p align="center">Equation 8' <code>dimension of δ³ is 10x1</code></p>
+<br> 
+
+Next. What happens if we continue moving from right to left and try to find $\partial C / \partial z^2$? This is exactly the spot in Figure 2 where I put e.t.c.:
+
 
 
 Before that let us state the key questions: how do the weights and biases between the first and second layers, as well as between the second and third layers, affect the final error? To answer this, let us first clarify exactly how we will use these weights and biases in Python. In the Network() class, Michael Nielsen suggests storing the weights self.w and biases self.b as large matrices nested within lists, as follows:
