@@ -283,6 +283,12 @@ $$
 
 Important note: in Michael Nielsen's book, the BP4 equation is presented in element-wise form, whereas we present it in vector form. This is precisely why $\delta $ and $a$ have swapped places!
 
+So! Now we have all of BP formulas:
+BP1: $\delta^3 = (\sigma(z^3) - y) \odot \sigma(z^3)(1 - \sigma(z^3))$ 
+BP2: $\delta^2 = \frac{dC}{dz^2} = \left((w^3)^T \cdot \delta^3\right) \odot \sigma'(z^2)$
+BP3: $\frac{dC}{db^2} = \left((w^3)^T \cdot \delta^3\right) \odot \sigma'(z^2) = \delta^2$
+BP4: $\frac{dC}{dw^2} = \delta^2 \cdot (a^1)^T$
+
 Before that let us state the key questions: how do the weights and biases between the first and second layers, as well as between the second and third layers, affect the final error? To answer this, let us first clarify exactly how we will use these weights and biases in Python. In the Network() class, Michael Nielsen suggests storing the weights self.w and biases self.b as large matrices nested within lists, as follows:
 
 $$
