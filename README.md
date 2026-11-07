@@ -262,6 +262,27 @@ $$
 </p>
 <br>
 
+And finally, we only need to calculate one more derivative — the dependence of the change in error dC on the weights w:
+
+![dC/dw explanation](images/dC_dw_explanation.png)
+<p align="center"><small>Figure 5</small></p> <br>
+
+Since the input data vector $a$ was originally defined specifically as a column vector, it must be transposed to ensure proper matrix multiplication:
+
+$$
+\frac{dC}{dw^2} = \delta^2 \cdot (a^1)^T
+$$
+
+
+<p align="center">
+ ________________________<br>
+  <b>Equation 11 - BP4</b><br>
+ ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+</p>
+<br>
+
+Important note: in Michael Nielsen's book, the BP4 equation is presented in element-wise form, whereas we present it in vector form. This is precisely why $\delta $ and $a$ have swapped places!
+
 Before that let us state the key questions: how do the weights and biases between the first and second layers, as well as between the second and third layers, affect the final error? To answer this, let us first clarify exactly how we will use these weights and biases in Python. In the Network() class, Michael Nielsen suggests storing the weights self.w and biases self.b as large matrices nested within lists, as follows:
 
 $$
