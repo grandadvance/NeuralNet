@@ -323,7 +323,7 @@ Alternatively, we can rewrite the exact same system, but this time applying the 
 $$
 \left\{
 \begin{aligned}
-\begin{pmatrix} w_{11\ new}^3 & \dots & w_{1,30\ new}^3 \\ \vdots & \ddots & \vdots \\ w_{10,1\ new}^3 & \dots & w_{10,30\ new}^3 \end{pmatrix} &= \begin{pmatrix w_{11\ old}^3 & \dots & w_{1,30\ old}^3 \\ \vdots & \ddots & \vdots \\ w_{10,1\ old}^3 & \dots & w_{10,30\ old}^3 \end{pmatrix} - \eta \cdot \begin{pmatrix} \delta_1^3 a_1^2 & \dots & \delta_1^3 a_{30}^2 \\ \vdots & \ddots & \vdots \\ \delta_{10}^3 a_1^2 & \dots & \delta_{10}^3 a_{30}^2 \end{pmatrix} \\[2em]
+\begin{pmatrix} w_{11\ new}^3 & \dots & w_{1,30\ new}^3 \\ \vdots & \ddots & \vdots \\ w_{10,1\ new}^3 & \dots & w_{10,30\ new}^3 \end{pmatrix} &= \begin{pmatrix w_{11\ old}^3 & \dots & w_{1,30\ old}^3 \\ \vdots & \ddots & \vdots \\ w_{10,1\ old}^3 & \dots & w_{10,30\ old}^3 \end{pmatrix} - \eta \cdot \begin{pmatrix} \delta_1^3 a_1^2 & \dots & \delta_1^3 a_{30}^2 \\ \vdots & \ddots & \vdots \\ \delta_{10}^3 a_1^2 & \dots & \delta_{10}^3 a_{30}^2 \end{pmatrix} \\[2.5em]
 \begin{pmatrix} b_{1\ new}^3 \\ \vdots \\ b_{10\ new}^3 \end{pmatrix} &= \begin{pmatrix} b_{1\ old}^3 \\ \vdots \\ b_{10\ old}^3 \end{pmatrix} - \eta \cdot \begin{pmatrix} \delta_1^3 \\ \vdots \\ \delta_{10}^3 \end{pmatrix}
 \end{aligned}
 \right.
