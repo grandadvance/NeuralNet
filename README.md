@@ -158,8 +158,49 @@ $$
 It is also important to note that we use the transposition operation to make the Hadamard product possible. This is an artificial introduction at this step, driven by dimension matching considerations during multiplication.
 
 $$
-\frac{dC}{da^2} = \left( \begin{matrix} w_{11}^3 & w_{12}^3 & w_{13}^3 & \dots & w_{1,30}^3 \\ w_{21}^3 & w_{22}^3 & w_{23}^3 & \dots & w_{2,30}^3 \\ \dots & \dots & \dots & \ddots & \dots \\ w_{10,1}^3 & w_{10,2}^3 & w_{10,3}^3 & \dots & w_{10,30}^3 \end{matrix} \right)^T \cdot \left( \left( \begin{matrix} a_1^3 \\ a_2^3 \\ \dots \\ a_{10}^3 \end{matrix} \right) - \left( \begin{matrix} y_1 \\ y_{10} \\ \dots \\ y_{10} \end{pmatrix} \right) \right) \odot \sigma \left( \begin{matrix} z_1^3 \\ z_2^3 \\ \dots \\ z_{10}^3 \end{matrix} \right) \odot \left( 1 - \sigma \left( \begin{matrix} z_1^3 \\ z_2^3 \\ \dots \\ z_{10}^3 \end{matrix} \right) \right)
+\frac{dC}{da^2} = 
+\begin{pmatrix}
+w_{11}^3 & w_{12}^3 & w_{13}^3 & \dots & w_{1\,30}^3 \\
+w_{21}^3 & w_{22}^3 & w_{23}^3 & \dots & w_{2\,30}^3 \\
+\dots & \dots & \dots & \ddots & \dots \\
+w_{10\,1}^3 & w_{10\,2}^3 & w_{10\,3}^3 & \dots & w_{10\,30}^3
+\end{pmatrix}^T
+\cdot
+\left(
+\begin{pmatrix}
+a_1^3 \\
+a_2^3 \\
+\dots \\
+a_{10}^3
+\end{pmatrix}
+-
+\begin{pmatrix}
+y_1 \\
+y_{10} \\
+\dots \\
+y_{10}
+\end{pmatrix}
+\right)
+\odot
+\sigma
+\begin{pmatrix}
+z_1^3 \\
+z_2^3 \\
+\dots \\
+z_{10}^3
+\end{pmatrix}
+\odot
+\left(
+1 - \sigma
+\begin{pmatrix}
+z_1^3 \\
+z_2^3 \\
+\dots \\
+z_{10}^3
+\end{pmatrix}
+\right)
 $$
+
 
 $$
 \frac{dC}{da^2} = \begin{pmatrix}
