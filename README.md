@@ -1,14 +1,5 @@
 # NeuralNet
-Studying the NN creation process: basic tasks solving and my own ideas realization.
-
-**Goals:**
-
-A. Complete chapter one of Nielsen book http://neuralnetworksanddeeplearning.com:
-1. Describe mathematically the NeuralNet architecture on the iDroo board;
-2. Compare notations between Nielsen's first chapter and architecture on IDROO, repeated by me;
-3. Study the code from Nielsen's first chapter;
-4. Afterward create code from scratch.
-
+# Michael Nielsen book explanation
 
 Let us assume that the structure of our neural network is represented as Python list as follows: 
 
