@@ -321,7 +321,6 @@ If we express this system of equations in matrix form, it will look as follows:
 Alternatively, we can rewrite the exact same system, but this time applying the BP3 and BP4 equations:
 
 $$
-\left\{
 \begin{aligned}
 &\begin{pmatrix}
 w_{11\text{ new}}^3 & \cdots & w_{1,30\text{ new}}^3 \\
