@@ -131,7 +131,7 @@ However, in system 5, we do not need $C(z^3)$, but rather $C(w^3)$. Therefore, w
 
 In the simplified diagram above, our final error $dC$ is affected by either the variable from path 1, the variable from path 2, the variable from path 3, and so on. Suppose we want to find $\partial C / \partial z^3_m$. Notice the method I proposed to do this: we simply added a unit fraction and then filled it with the required element!
 
-Note that when converting algebraic transformations into Python code, you need to apply transposition where necessary. To make the transition from element-wise to vector transformation clearer for you, let us recall what the formula for \(\delta ^{3}\) looked like
+Note that when converting algebraic transformations into Python code, you need to apply transposition where necessary. To make the transition from element-wise to vector transformation clearer for you, let us recall what the formula for $\delta ^{3}$ looked like
 
 $$
 \nabla C(z^3) = (\sigma(z^3) - y) \odot \sigma'(z^3)
