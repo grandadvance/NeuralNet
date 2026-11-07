@@ -359,7 +359,7 @@ $$
 
 <p align="center"><small>System 5''</small></p> <br>
 
-Before that let us state the key questions: how do the weights and biases between the first and second layers, as well as between the second and third layers, affect the final error? To answer this, let us first clarify exactly how we will use these weights and biases in Python. In the Network() class, Michael Nielsen suggests storing the weights self.w and biases self.b as large matrices nested within lists, as follows:
+A small addition at the end of our algebraic journey: if you are visualizing how we pass weights and biases into the program in Python, remember that the weights and biases in the Network class are structured as lists of matrices!
 
 $$
 \text{self.w} = \left[\text{ }
