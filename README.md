@@ -1,4 +1,3 @@
-# NeuralNet
 # Michael Nielsen book explanation
 
 Let us assume that the structure of our neural network is represented as Python list as follows: 
