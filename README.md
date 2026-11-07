@@ -131,6 +131,9 @@ However, in system 5, we do not need $C(z^3)$, but rather $C(w^3)$. Therefore, w
 
 In the simplified diagram above, our final error $dC$ is affected by either the variable from path 1, the variable from path 2, the variable from path 3, and so on. Suppose we want to find $\partial C / \partial z^3_m$. Notice the method I proposed to do this: we simply added a unit fraction and then filled it with the required element!
 
+Note that when converting algebraic transformations into Python code, you need to apply transposition where necessary.
+
+
 Before that let us state the key questions: how do the weights and biases between the first and second layers, as well as between the second and third layers, affect the final error? To answer this, let us first clarify exactly how we will use these weights and biases in Python. In the Network() class, Michael Nielsen suggests storing the weights self.w and biases self.b as large matrices nested within lists, as follows:
 
 $$
