@@ -162,8 +162,14 @@ $$
 $$
 
 $$
-\frac{dC}{da^2} = \left( \begin{matrix} w_{11}^3 & w_{12}^3 & w_{13}^3 & \dots & w_{1,30}^3 \\ w_{21}^3 & w_{22}^3 & w_{23}^3 & \dots & w_{2,30}^3 \\ \dots & \dots & \dots & \ddots & \dots \\ w_{10,1}^3 & w_{10,2}^3 & w_{10,3}^3 & \dots & w_{10,30}^3 \end{matrix} \right)^T \cdot \delta^3
+\frac{dC}{da^2} = \begin{pmatrix}
+w_{11}^3 & w_{12}^3 & w_{13}^3 & \dots & w_{1\,30}^3 \\
+w_{21}^3 & w_{22}^3 & w_{23}^3 & \dots & w_{2\,30}^3 \\
+\dots & \dots & \dots & \ddots & \dots \\
+w_{10\,1}^3 & w_{10\,2}^3 & w_{10\,3}^3 & \dots & w_{10\,30}^3
+\end{pmatrix}^T \cdot \delta^3
 $$
+
 <p align="center"><code>dimension of δ³ is 10x1</code></p>
 <br> 
 
