@@ -303,6 +303,16 @@ $$
 
 And to make our derivation fully consistent with the book, we simply need to turn these equations into recursive ones by replacing $2$ with $l$ and $3$ with $L = l + 1$.
 
+Now, all that remains is to expand on the essence of the equations in system 5. For example, applying this system to the weights and biases of the third layer, we get:
+
+$$
+\begin{cases}
+w^3_{\text{new}} = w^3_{\text{old}} - \eta \cdot \nabla C(w^3) \\
+b^3_{\text{new}} = b^3_{\text{old}} - \eta \cdot \nabla C(b^3)
+\end{cases}
+$$
+<p align="center"><small>System 5</small></p> <br>
+
 Before that let us state the key questions: how do the weights and biases between the first and second layers, as well as between the second and third layers, affect the final error? To answer this, let us first clarify exactly how we will use these weights and biases in Python. In the Network() class, Michael Nielsen suggests storing the weights self.w and biases self.b as large matrices nested within lists, as follows:
 
 $$
