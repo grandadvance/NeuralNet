@@ -354,7 +354,6 @@ b_{10\text{ old}}^3
 \delta_{10}^3
 \end{pmatrix}
 \end{aligned}
-\right
 $$
 
 <p align="center"><small>System 5''</small></p> <br>
