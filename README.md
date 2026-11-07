@@ -318,6 +318,48 @@ If we express this system of equations in matrix form, it will look as follows:
 ![The System 5 prime](images/the_system_5_prime.png)
 <p align="center"><small>System 5'</small></p> <br>
 
+Alternatively, we can rewrite the exact same system, but this time applying the BP3 and BP4 equations:
+
+
+$$
+\begin{cases}
+\begin{pmatrix}
+w_{11\ new}^3 & \dots & w_{1\,30\ new}^3 \\
+\vdots & \ddots & \vdots \\
+w_{10\,1\ new}^3 & \dots & w_{10\,30\ new}^3 \end{pmatrix}
+=\begin{pmatrix}
+w_{11\ old}^3 & \dots & w_{1\,30\ old}^3 \\
+\vdots & \ddots & \vdots \\
+w_{10\,1\ old}^3 & \dots & w_{10\,30\ old}^3
+\end{pmatrix}
+- \eta \cdot
+\begin{pmatrix}
+\delta_1^3 a_1^2 & \dots & \delta_1^3 a_{30}^2 \\
+\vdots & \ddots & \vdots \\
+\delta_{10}^3 a_1^2 & \dots & \delta_{10}^3 a_{30}^2
+\end{pmatrix}
+\\[2.5em]
+\begin{pmatrix}
+b_{1\ new}^3 \\
+\vdots \\
+b_{10\ new}^3
+\end{pmatrix}
+=
+\begin{pmatrix}
+b_{1\ old}^3 \\
+\vdots \\
+b_{10\ old}^3
+\end{pmatrix}
+- \eta \cdot
+\begin{pmatrix}
+\delta_1^3 \\
+\vdots \\
+\delta_{10}^3
+\end{pmatrix}
+\end{cases}
+$$
+<p align="center"><small>System 5''</small></p> <br>
+
 Before that let us state the key questions: how do the weights and biases between the first and second layers, as well as between the second and third layers, affect the final error? To answer this, let us first clarify exactly how we will use these weights and biases in Python. In the Network() class, Michael Nielsen suggests storing the weights self.w and biases self.b as large matrices nested within lists, as follows:
 
 $$
