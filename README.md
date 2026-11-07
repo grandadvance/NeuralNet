@@ -379,7 +379,7 @@ w_{10\,1}^3 & w_{10\,2}^3 & w_{10\,3}^3 & \dots & w_{10\,30}^3
 \end{pmatrix}
 \text{ }\right]
 $$
-<p align="center"><small>Equation 5</small></p> <br>
+<p align="center"><small>Equation 12</small></p> <br>
 
 $$
 \begin{gathered}
@@ -401,7 +401,7 @@ b_{10}^3
 \text{ }\right]
 \end{gathered}
 $$
-<p align="center"><small>Equation 6</small></p> <br>
+<p align="center"><small>Equation 13</small></p> <br>
 
 
 
