@@ -314,7 +314,6 @@ $$
 <p align="center"><small>System 5</small></p> <br>
 
 If we express this system of equations in matrix form, it will look as follows:
-
 $$
 \begin{cases}
 \begin{pmatrix}
