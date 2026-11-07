@@ -1,4 +1,4 @@
-  <h1>A supplement to Michael Nielsen's "Neural Networks and Deep Learning"</h1>
+  <h2>A supplement to Michael Nielsen's "Neural Networks and Deep Learning"</h2>
   <p>
     <strong><em>A detailed Algebraic Derivation of the BP1, BP2, BP3 and BP4 Equations</em></strong>
   </p>
