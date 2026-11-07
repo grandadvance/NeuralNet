@@ -213,9 +213,21 @@ Or shortly:
 
 Next. What happens if we continue moving from right to left and try to find $\partial C / \partial z^2$? This is exactly the spot in Figure 2 where I put e.t.c.:
 
-
 ![da/dz^2 explanation](images/da_dz2_explanation.png)
-<p align="center"><small>Figure 2</small></p> <br>
+<p align="center"><small>Figure 3</small></p> <br>
+
+$$
+\delta^2 = \frac{dC}{dz^2} = \left( (w^3)^T \cdot \delta^3 \right) \odot \sigma'(z^2)
+$$
+
+<p align="center">
+ ________________________<br>
+  <b>Equation 9 - BP2</b><br>
+ ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+</p>
+<br>
+
+Please note: we enclosed the operation $(w^3)^T \cdot \delta^3$ in parentheses because the order of multiplication matters. We perform the operation inside the parentheses first since, according to the steps described above, it precedes the Hadamard product!
 
 Before that let us state the key questions: how do the weights and biases between the first and second layers, as well as between the second and third layers, affect the final error? To answer this, let us first clarify exactly how we will use these weights and biases in Python. In the Network() class, Michael Nielsen suggests storing the weights self.w and biases self.b as large matrices nested within lists, as follows:
 
