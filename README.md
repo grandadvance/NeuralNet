@@ -113,7 +113,7 @@ $$
 or
 
 $$
-\delta^3= (\sigma(z^3) - y) \dot \sigma(z^3)\odot(1-\sigma(z^3))
+\delta^3= (\sigma(z^3) - y) \odot \sigma(z^3)\dot(1-\sigma(z^3))
 $$
 <p align="center">
  ________________________<br>
