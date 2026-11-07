@@ -1,5 +1,5 @@
 # A supplement to Michael Nielsen's "Neural Networks and Deep Learning": 
-A detailed Algebraic Derivation of the BP1, BP2, BP3 and BP4 Equations.
+# A detailed Algebraic Derivation of the BP1, BP2, BP3 and BP4 Equations.
 
 Let us assume that the structure of our neural network is represented as Python list as follows: 
 
