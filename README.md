@@ -5,6 +5,8 @@
 </div>
 <br>
 
+# Note: This text is still being refined and may contain typos or minor inaccuracies. Please contact me if you come across any.
+
 Let us assume that the structure of our neural network is represented as Python list as follows: 
 
 nn_structure = [784, 30, 10] 
