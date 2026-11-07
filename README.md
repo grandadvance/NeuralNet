@@ -321,11 +321,40 @@ If we express this system of equations in matrix form, it will look as follows:
 Alternatively, we can rewrite the exact same system, but this time applying the BP3 and BP4 equations:
 
 $$
-\text{  } \left\{ \begin{array}{l}
-\begin{pmatrix} w_{11\ new}^3 & \dots & w_{1,30\ new}^3 \\ \vdots & \ddots & \vdots \\ w_{10,1\ new}^3 & \dots & w_{10,30\ new}^3 \end{pmatrix} = \begin{pmatrix w_{11\ old}^3 & \dots & w_{1,30\ old}^3 \\ \vdots & \ddots & \vdots \\ w_{10,1\ old}^3 & \dots & w_{10,30\ old}^3 \end{pmatrix} - \eta \cdot \begin{pmatrix} \delta_1^3 a_1^2 & \dots & \delta_1^3 a_{30}^2 \\ \vdots & \ddots & \vdots \\ \delta_{10}^3 a_1^2 & \dots & \delta_{10}^3 a_{30}^2 \end{pmatrix}
-\\[3.5em]
-\begin{pmatrix} b_{1\ new}^3 \\ \vdots \\ b_{10\ new}^3 \end{pmatrix} = \begin{pmatrix} b_{1\ old}^3 \\ \vdots \\ b_{10\ old}^3 \end{pmatrix} - \eta \cdot \begin{pmatrix} \delta_1^3 \\ \vdots \\ \delta_{10}^3 \end{pmatrix}
-\end{array} \right
+\left\{
+\begin{aligned}
+&\begin{pmatrix}
+w_{11\text{ new}}^3 & \cdots & w_{1,30\text{ new}}^3 \\
+\vdots & \ddots & \vdots \\
+w_{10,1\text{ new}}^3 & \cdots & w_{10,30\text{ new}}^3
+\end{pmatrix} = 
+\begin{pmatrix}
+w_{11\text{ old}}^3 & \cdots & w_{1,30\text{ old}}^3 \\
+\vdots & \ddots & \vdots \\
+w_{10,1\text{ old}}^3 & \cdots & w_{10,30\text{ old}}^3
+\end{pmatrix} - \eta \cdot 
+\begin{pmatrix}
+\delta_1^3 a_1^2 & \cdots & \delta_1^3 a_{30}^2 \\
+\vdots & \ddots & \vdots \\
+\delta_{10}^3 a_1^2 & \cdots & \delta_{10}^3 a_{30}^2
+\end{pmatrix} \\
+&\hspace{3.5cm} \begin{pmatrix}
+b_{1\text{ new}}^3 \\
+\vdots \\
+b_{10\text{ new}}^3
+\end{pmatrix} = 
+\begin{pmatrix}
+b_{1\text{ old}}^3 \\
+\vdots \\
+b_{10\text{ old}}^3
+\end{pmatrix} - \eta \cdot 
+\begin{pmatrix}
+\delta_1^3 \\
+\vdots \\
+\delta_{10}^3
+\end{pmatrix}
+\end{aligned}
+\right.
 $$
 
 <p align="center"><small>System 5''</small></p> <br>
