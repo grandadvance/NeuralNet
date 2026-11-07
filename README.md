@@ -252,11 +252,15 @@ Now, similarly to what we did in Figure 3, we will take the derivative with resp
 <p align="center"><small>Figure 4</small></p> <br>
 
 $$
-BP3 : \frac{dC}{db^2} = \left( (w^3)^T \cdot \delta^3 \right) \odot \sigma'(z^2) = \delta^2
+\frac{dC}{db^2} = \left( (w^3)^T \cdot \delta^3 \right) \odot \sigma'(z^2) = \delta^2
 $$
 
-<p align="center">Equation 10 </p>
-<br> 
+<p align="center">
+ ________________________<br>
+  <b>Equation 10 - BP3</b><br>
+ ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+</p>
+<br>
 
 Before that let us state the key questions: how do the weights and biases between the first and second layers, as well as between the second and third layers, affect the final error? To answer this, let us first clarify exactly how we will use these weights and biases in Python. In the Network() class, Michael Nielsen suggests storing the weights self.w and biases self.b as large matrices nested within lists, as follows:
 
