@@ -1,5 +1,3 @@
-# Michael Nielsen book explanation
-
 import numpy as np
 import random
 import logging
