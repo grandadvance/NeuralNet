@@ -301,6 +301,8 @@ $$
 \text{BP4: } \frac{dC}{dw^2} = \delta^2 \cdot (a^1)^T
 $$
 
+And to make our derivation fully consistent with the book, we simply need to turn these equations into recursive ones by replacing $2$ with $l$ and $3$ with $L = l + 1$.
+
 Before that let us state the key questions: how do the weights and biases between the first and second layers, as well as between the second and third layers, affect the final error? To answer this, let us first clarify exactly how we will use these weights and biases in Python. In the Network() class, Michael Nielsen suggests storing the weights self.w and biases self.b as large matrices nested within lists, as follows:
 
 $$
