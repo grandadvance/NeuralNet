@@ -1,7 +1,7 @@
 <br>
 <div align="center">
   <h2>A supplement to Michael Nielsen's "Neural Networks and Deep Learning"</h2>
-  <h3><i>A detailed Algebraic Derivation of the BP1, BP2, BP3 and BP4 Equations</i></h3>
+  <h3><i>A detailed algebraic derivation of the BP1, BP2, BP3 and BP4 equations</i></h3>
 </div>
 <br>
 
@@ -233,6 +233,8 @@ $$
 <br>
 
 Please note: we enclosed the operation $(w^3)^T \cdot \delta^3$ in parentheses because the order of multiplication matters. We perform the operation inside the parentheses first since, according to the steps described above, it precedes the Hadamard product!
+
+Now, all that remains is to derive the dependence of the change in error $dC$ on the bias increments (BP3) and the dependence of the change in error $dC$ on the weights (BP4). To do this, we simply need to move one step further from right to left and take the derivative with respect to either the bias $b$ or the weight $w$.
 
 Before that let us state the key questions: how do the weights and biases between the first and second layers, as well as between the second and third layers, affect the final error? To answer this, let us first clarify exactly how we will use these weights and biases in Python. In the Network() class, Michael Nielsen suggests storing the weights self.w and biases self.b as large matrices nested within lists, as follows:
 
