@@ -157,6 +157,7 @@ $$
 
 It is also important to note that we use the transposition operation to make the Hadamard product possible. This is an artificial introduction at this step, driven by dimension matching considerations during multiplication.
 
+$$
 \frac{dC}{da^2} = \begin{pmatrix}
 w_{11}^3 & w_{12}^3 & w_{13}^3 & \dots & w_{1\ 30}^3 \\
 w_{21}^3 & w_{22}^3 & w_{23}^3 & \dots & w_{2\ 30}^3 \\
@@ -183,6 +184,7 @@ z_2^3 \\
 \dots \\
 z_{10}^3
 \end{pmatrix} \right)
+$$
 
 $$
 \frac{dC}{da^2} = \begin{pmatrix}
