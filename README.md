@@ -208,12 +208,14 @@ Or shortly:
 <p align="center"> $\frac{dC}{da^2} = (w^3)^T \cdot \delta^3$</p>
 <br> 
 
-<p align="center">Equation 8' <code>dimension of δ³ is 10x1</code></p>
+<p align="center">Equation 8' </p>
 <br> 
 
 Next. What happens if we continue moving from right to left and try to find $\partial C / \partial z^2$? This is exactly the spot in Figure 2 where I put e.t.c.:
 
 
+![da/dz^2 explanation](images/dC_dz2_explanation.png)
+<p align="center"><small>Figure 2</small></p> <br>
 
 Before that let us state the key questions: how do the weights and biases between the first and second layers, as well as between the second and third layers, affect the final error? To answer this, let us first clarify exactly how we will use these weights and biases in Python. In the Network() class, Michael Nielsen suggests storing the weights self.w and biases self.b as large matrices nested within lists, as follows:
 
