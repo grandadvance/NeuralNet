@@ -34,12 +34,13 @@ Now, these weighted sums must serve as the input data for the next, third layer.
 
 $$
 \begin{cases}
-a_1^2 = \sigma(z_1^2) \\
-a_2^2 = \sigma(z_2^2) \\
+a_1^2 = \sigma(z_1^2 + b_1^2) \\
+a_2^2 = \sigma(z_2^2 + b_2^2) \\
 \dots \\
-a_{30}^2 = \sigma(z_{30}^2)
+a_{30}^2 = \sigma(z_{30}^2 + b_{30}^2)
 \end{cases}
 $$
+
 <p align="center"><small>System 2</small></p> <br>
 
 Now, each \(a_{i}^{2}\) serves as the input data for the next, third layer. Following this logic, we multiply each resulting value \(a_{i}^{2}\) by the corresponding weight between the second and third layers to obtain an analogous system of equations:
@@ -58,10 +59,10 @@ and
 
 $$
 \begin{cases}
-a_1^3 = \sigma(z_1^3) \\
-a_2^3 = \sigma(z_2^3) \\
+a_1^3 = \sigma(z_1^3 + b_1^3) \\
+a_2^3 = \sigma(z_2^3 + b_2^3) \\
 \dots \\
-a_{10}^3 = \sigma(z_{10}^3)
+a_{10}^3 = \sigma(z_{10}^3 + b_10^3)
 \end{cases}
 $$
 <p align="center"><small>System 4</small></p> <br>
@@ -234,17 +235,20 @@ $$
 
 Please note: we enclosed the operation $(w^3)^T \cdot \delta^3$ in parentheses because the order of multiplication matters. We perform the operation inside the parentheses first since, according to the steps described above, it precedes the Hadamard product!
 
-Now, all that remains is to derive the dependence of the change in error $dC$ on the bias increments (BP3) and the dependence of the change in error $dC$ on the weights (BP4). To do this, we simply need to move one step further from right to left and take the derivative with respect to either the bias $b$ or the weight $w$. Let us rewrite system 2, accounting for the biases $b^{2}$:
+Now, all that remains is to derive the dependence of the change in error $dC$ on the bias increments (BP3) and the dependence of the change in error $dC$ on the weights (BP4). To do this, we simply need to move one step further from right to left and take the derivative with respect to either the bias $b$ or the weight $w$. Let me remind system 2 for you:
 
 $$
 \begin{cases}
-a_1^2 = \sigma(z_1^2)+b_1^2 \\
-a_2^2 = \sigma(z_2^2)+b_2^2 \\
+a_1^2 = \sigma(z_1^2 + b_1^2) \\
+a_2^2 = \sigma(z_2^2 + b_2^2) \\
 \dots \\
-a_{30}^2 = \sigma(z_{30}^2)+b_{30}^2
+a_{30}^2 = \sigma(z_{30}^2 + b_{30}^2)
 \end{cases}
 $$
-<p align="center"><small>System 7</small></p> <br>
+
+Now we take the derivative respect to either bias:
+
+
 
 Now, similarly to what we did in Figure 3, we will take the derivative with respect to $b^{2}$ instead of $z^{2}$:
 
