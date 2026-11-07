@@ -313,6 +313,56 @@ b^3_{\text{new}} = b^3_{\text{old}} - \eta \cdot \nabla C(b^3)
 $$
 <p align="center"><small>System 5</small></p> <br>
 
+If we express this system of equations in matrix form, it will look as follows:
+
+$$
+\begin{cases}
+\begin{pmatrix}
+w_{11\ new}^3 & w_{12\ new}^3 & w_{13\ new}^3 & \dots & w_{1\,30\ new}^3 \\
+w_{21\ new}^3 & w_{22\ new}^3 & w_{23\ new}^3 & \dots & w_{2\,30\ new}^3 \\
+\dots & \dots & \ddots & \dots & \dots \\
+w_{10\,1\ new}^3 & w_{10\,2\ new}^3 & w_{10\,3\ new}^3 & \dots & w_{10\,30\ new}^3
+\end{pmatrix} 
+= 
+\begin{pmatrix}
+w_{11\ old}^3 & w_{12\ old}^3 & w_{13\ old}^3 & \dots & w_{1\,30\ old}^3 \\
+w_{21\ old}^3 & w_{22\ old}^3 & w_{23\ old}^3 & \dots & w_{2\,30\ old}^3 \\
+\dots & \dots & \ddots & \dots & \dots \\
+w_{10\,1\ old}^3 & w_{10\,2\ old}^3 & w_{10\,3\ old}^3 & \dots & w_{10\,30\ old}^3
+\end{pmatrix}
+- \eta \cdot
+\begin{pmatrix}
+\frac{\partial C}{\partial w_{11}^3} & \frac{\partial C}{\partial w_{12}^3} & \frac{\partial C}{\partial w_{13}^3} & \dots & \frac{\partial C}{\partial w_{1\,30}^3} \\[1em]
+\frac{\partial C}{\partial w_{21}^3} & \frac{\partial C}{\partial w_{22}^3} & \frac{\partial C}{\partial w_{23}^3} & \dots & \frac{\partial C}{\partial w_{2\,30}^3} \\
+\dots & \dots & \dots & \ddots & \dots \\
+\frac{\partial C}{\partial w_{10\,1}^3} & \frac{\partial C}{\partial w_{10\,2}^3} & \frac{\partial C}{\partial w_{10\,3}^3} & \dots & \frac{\partial C}{\partial w_{10\,30}^3}
+\end{pmatrix}
+\\[4.5em]
+\begin{pmatrix}
+b_{1\ new}^3 \\
+b_{2\ new}^3 \\
+\dots \\
+b_{10\ new}^3
+\end{pmatrix}
+=
+\begin{pmatrix}
+b_{1\ new}^3 \\
+b_{2\ new}^3 \\
+\dots \\
+b_{10\ new}^3
+\end{pmatrix}
+- \eta \cdot
+\begin{pmatrix}
+\frac{dC}{db_1^3} \\[0.7em]
+\frac{dC}{db_2^3} \\
+\dots \\
+\frac{dC}{db_{10}^3}
+\end{pmatrix}
+\end{cases}
+$$
+
+<p align="center"><small>System 5'</small></p> <br>
+
 Before that let us state the key questions: how do the weights and biases between the first and second layers, as well as between the second and third layers, affect the final error? To answer this, let us first clarify exactly how we will use these weights and biases in Python. In the Network() class, Michael Nielsen suggests storing the weights self.w and biases self.b as large matrices nested within lists, as follows:
 
 $$
